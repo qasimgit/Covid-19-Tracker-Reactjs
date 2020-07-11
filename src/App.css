@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(236, 228, 228);
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading {
+  line-height: 30px;
+  width: 270px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+  margin-bottom: 20px;
+  display: flex;
+
+
+}
+
+.heading h1 {
+  font-size: 40px;
+  font-weight: 1500;
+  word-spacing: 5px;
+  
+}
+
+.heading img{
+    padding-top: 10px;
+}
+
+.heading h1 span {
+  font-size: 15px;
+}
+
+.searchBar {
+  width: 270px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.searchBar input {
+  padding: 10px;
+  border-radius: 30px;
+  width: 220px;
+  outline: none;
+  background-color: rgb(236, 228, 228);
+  border: none;
+  margin-bottom: 10px;
+}
+
+
+
+.searchBar li{
+    list-style: none;
+    padding: 10px;
+
+}
+

@@ -8,7 +8,7 @@ const CountryPicker = () =>{
             <div className='heading'>
                 <div>
 
-            <img src="https://img.icons8.com/ios/50/000000/virus.png"/>
+            <img src="https://img.icons8.com/ios/50/000000/virus.png" alt='img'/>
                 </div>
             <div>
 

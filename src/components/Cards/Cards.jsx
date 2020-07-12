@@ -6,7 +6,7 @@ const Cards = ({ response }) => {
     <div>
       <div className='mainBorder'>
         <div>
-          <h2 className="lastUpdate">Last Updated on:</h2>
+  <h2 className="lastUpdate">Last Updated on: {response && new Date(response.lastUpdate).toLocaleString()}</h2>
         </div>
         {response ? (
           <div className="borderCont">
@@ -16,6 +16,17 @@ const Cards = ({ response }) => {
                 <CountUp
                   start={0}
                   end={response.confirmed.value}
+                  duration={1}
+                  separator=","
+                />
+              </h1>
+            </div>
+            <div className="borderBox activeCase">
+              <h3>Active Cases</h3>
+              <h1>
+                <CountUp
+                  start={0}
+                  end={response.confirmed.value - response.recovered.value}
                   duration={1}
                   separator=","
                 />

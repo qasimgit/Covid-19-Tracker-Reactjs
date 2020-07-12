@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Components //
-import { Cards, Chart, CountryPicker } from "./components";
+import { Cards, ChartsData, CountryPicker } from "./components";
 
 import "./App.css";
 import { fetchData } from "./api";
@@ -24,12 +24,14 @@ const App = () => {
     handleFetchData();
   }, []);
 
-console.log(data)
   return (
     <div className="mainCont">
       <CountryPicker />
+      <div className="chartsCards">
+        <Cards response={data} />
 
-      <Cards response={data} />
+        <ChartsData />
+      </div>
     </div>
   );
 };

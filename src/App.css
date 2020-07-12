@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
   background-color: rgb(236, 228, 228);
   margin: 0px;
+  font-family: 'Lato', sans-serif;
   padding: 0px;
 }
 
@@ -11,6 +13,11 @@ body {
 
 .countPick_cont {
   width: 320px;
+}
+
+.chartsCards{
+  display: flex;
+  flex-direction: column;
 }
 
 .heading {
@@ -70,14 +77,14 @@ body {
 }
 
 .borderCont {
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 80px;
   display: flex;
   justify-content: space-around;
 }
 
 .borderBox {
-  width: 250px;
+  width: 220px;
   padding: 20px;
   margin-left: 20px;
   align-items: center;
@@ -94,6 +101,10 @@ body {
     background-color: #598ea5;
     color: white;
 
+}
+
+.activeCase{
+  background-color: white;
 }
 
 .recovered {
@@ -125,4 +136,9 @@ body {
 .deaths h3{
     font-size: 22px;
 
+}
+
+.lineChart{
+  width: 50%;
+  margin: 30px;
 }

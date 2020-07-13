@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { fetchDailyData } from "../../api";
 import { Line} from "react-chartjs-2";
 
+
 export const ChartsData = () => {
   const [dailyData, setDailyData] = useState([]);
 
@@ -14,7 +15,7 @@ export const ChartsData = () => {
   fetchApi();
   });
 
-  const LineChart = dailyData.length ? (
+  const LineChart =  dailyData.length ? (
     <Line
       data={{
         labels: dailyData.map(({ date }) => date),
@@ -36,12 +37,15 @@ export const ChartsData = () => {
     />
   ) : null;
 
+  
+
  
 
   return (
     <div>
 
   <div className="lineChart">{LineChart}</div>
+  <div className='barChart'></div>
     </div>
   )
 };

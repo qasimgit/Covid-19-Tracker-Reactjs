@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 // Components //
-import { Cards, ChartsData, CountryPicker } from "./components";
+import { Cards, ChartsData, CountryPicker , Symtoms } from "./components";
 
 import "./App.css";
 import { fetchData } from "./api";
+import { symtoms } from "./components/symtoms/Symtoms";
 
 const App = () => {
   // ** States ** //
@@ -29,8 +30,10 @@ const App = () => {
       <CountryPicker />
       <div className="chartsCards">
         <Cards response={data} />
+        <Symtoms />
 
         <ChartsData />
+
       </div>
     </div>
   );

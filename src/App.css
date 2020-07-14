@@ -46,7 +46,7 @@ body {
 
 .searchBar {
   width: 270px;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   padding: 20px;
   border-radius: 0px 20px 20px 0px;
@@ -78,7 +78,7 @@ body {
 
 .borderCont {
   margin-top: 10px;
-  margin-left: 80px;
+  margin-left: 40px;
   display: flex;
   justify-content: space-around;
 }
@@ -139,6 +139,60 @@ body {
 }
 
 .lineChart{
-  width: 50%;
+  width: 90%;
   margin: 30px;
+  justify-content: center;
+  align-items: center;
 }
+
+.symtomsDiv{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.symtoms{
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 40%;
+  padding: 20px;
+  margin-left: 20px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -2px 4px 26px 5px rgba(0,0,0,0.3);
+}
+
+
+  .news{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 40%;
+    padding: 20px;
+    margin-left: 20px;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 4px 26px 5px rgba(0,0,0,0.3);
+  }
+
+  .symHeading{
+    background-color: wheat;
+    padding: 10px;
+
+  }
+
+  .symHeading span{
+    font-size: 20px;
+  }
+
+  .news h1 a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .news h1 a:hover{
+    color:lightseagreen;
+  }
+  

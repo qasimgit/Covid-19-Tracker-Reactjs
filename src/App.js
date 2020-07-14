@@ -21,7 +21,7 @@ const App = () => {
     } catch (error) {
       console.error(error);
     }
-  };  
+  };
   useEffect(() => {
     handleFetchData();
   }, []);
@@ -29,6 +29,7 @@ const App = () => {
   const handleChangeCountry = async (country) => {
     const result = await fetchCountrydata(country);
     setData(result);
+
     setCountryHandler(await country);
   };
 

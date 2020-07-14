@@ -10,19 +10,21 @@ export const Symtoms = () => {
       <div className="symtoms">
         <h1 className="symHeading">Symtoms</h1>
         <h1>
-          <img src={fever} className='imgsym' />
+          <span>
+            <img src={fever} className="imgsym" />
+          </span>
           Fever
         </h1>
         <h1>
-          <img src={cough} className='imgsym' />
+          <img src={cough} className="imgsym" />
           Dry Cough
         </h1>
         <h1>
-          <img src={lungs} className='imgsym'/>
+          <img src={lungs} className="imgsym" />
           Shortness of Breath
         </h1>
         <h1>
-          <img src={sorethorat} className='imgsym' />
+          <img src={sorethorat} className="imgsym" />
           Sore Throat
         </h1>
       </div>

@@ -37,9 +37,16 @@ const CountryPicker = ({ handleOnChange }) => {
               </option>
             ))}
           </NativeSelect>
+          
+          
         </FormControl>
-      </div>
+        </div>
+        <div>
+            {fetchedCountries.map((countryNames) => (<li>{countryNames}</li>) )}
+        
+            </div>        
     </div>
+
   );
 };
 

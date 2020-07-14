@@ -1,7 +1,19 @@
-import React from 'react';
+import React , {useEffect , useState} from 'react';
+import {FormControl , NativeSelect} from '@material-ui/core'
+import {fetchCountries} from '../../api'
 
 
 const CountryPicker = () =>{
+
+    const [fetchedCountries , setFetchedCountries] = useState([]);
+
+    useEffect(() => {
+        const fetchCountryApi = async () => {
+            setFetchedCountries(await fetchCountries())
+        }
+        fetchCountryApi();
+
+    } , [setFetchedCountries])
 
     return(
         <div className='countPick_cont'>
@@ -18,31 +30,15 @@ const CountryPicker = () =>{
             </h1>
             </div>
             </div>
-            <div className='searchBar'>
-                <input type="text" placeholder='Search by country'/><i className="fa fa-search"></i>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
-                <li>
-                    Pakistan
-                </li>
+        
+            <div>
 
+             <FormControl className='searchBar'>
+                 <NativeSelect>
+                     <option value="global" >Global</option>
 
+                 </NativeSelect>
+             </FormControl>
             </div>
             
 

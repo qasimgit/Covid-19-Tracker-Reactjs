@@ -5,7 +5,6 @@ import { Cards, ChartsData, CountryPicker, Symtoms , MapContainer } from "./comp
 
 import "./App.css";
 import { fetchData, fetchCountrydata } from "./api";
-import { symtoms } from "./components/symtoms/Symtoms";
 
 const App = () => {
   // ** States ** //
@@ -31,6 +30,7 @@ const App = () => {
     setData(result);
 
     setCountryHandler(await country);
+    console.log("countryHandler" , countryHandler)
   };
 
   return (

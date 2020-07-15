@@ -11,12 +11,12 @@ export const Symtoms = () => {
         <h1 className="symHeading">Symtoms</h1>
         <h1>
           <span>
-            <img src={fever} className="imgsym" alt='fever'/>
+            <img src={fever} className="imgsym" alt='fever' />
           </span>
           Fever
         </h1>
         <h1>
-          <img src={cough} className="imgsym" alt='cough' />
+          <img src={cough} className="imgsym" alt='cough'  />
           Dry Cough
         </h1>
         <h1>
@@ -35,7 +35,7 @@ export const Symtoms = () => {
         <h1>
           <a
             href="https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             Corona Vaccine Tracker(Article)
           </a>
@@ -43,13 +43,13 @@ export const Symtoms = () => {
         <h1>
           <a
             href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             How to Protect Yourself & Others
           </a>
         </h1>
         <h1>
-          <a href="https://www.bbc.com/news/business-51706225" target="_blank">
+          <a href="https://www.bbc.com/news/business-51706225" target="_blank" rel="noopener noreferrer">
             Corona Impact on Economies
           </a>
         </h1>

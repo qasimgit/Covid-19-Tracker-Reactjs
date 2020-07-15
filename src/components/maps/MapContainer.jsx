@@ -1,29 +1,7 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-// export const MapContainer = () => {
-//   const mapStyles = {
-//     height: "80vh",
-//     width: "150vh",
-//   };
 
-//   const defaultCenter = {
-//     lat: 24.8607,
-//     lng: 67.0011,
-//   };
-
-//   return (
-//     <LoadScript googleMapsApiKey="AIzaSyC3sd_lXxoh3ElacZ80qd5LwhOJGQYU0n8">
-//       <GoogleMap
-//         mapContainerStyle={mapStyles}
-//         zoom={13}
-//         center={defaultCenter}
-//       />
-//     </LoadScript>
-
-//   );
-// };
-// ​
 export const MapContainer = () => {
 
   const mapStyles = {
@@ -32,45 +10,73 @@ export const MapContainer = () => {
   };
 
   const defaultCenter = {
-    lat: 34.0479,
-    lng: 100.6197,
+    lat: 30.3753,
+    lng: 69.3451,
   };
 
   
   const locations = [
     {
-      name: "Location 1",
+      name: "PAKISTAN",
       location: { 
-        lat: 41.3954,
-        lng: 2.162 
+        lat: 30.3753,
+        lng: 69.3451, 
+      },
+    },
+    {  
+      name: "INDIA",
+      location: { 
+        lat: 20.5937,
+        lng: 78.9629
       },
     },
     {
-      name: "Location 2",
+      name: "CHINA",
       location: { 
-        lat: 41.3917,
-        lng: 2.1649
+        lat: 35.8617,
+        lng: 104.1954
       },
     },
     {
-      name: "Location 3",
+      name: "RUSSIA",
       location: { 
-        lat: 41.3773,
-        lng: 2.1585
+        lat: 61.5240,
+        lng: 105.3188
       },
     },
     {
-      name: "Location 4",
+      name: "SRILANKA",
       location: { 
-        lat: 41.3797,
-        lng: 2.1682
+        lat: 7.8731,
+        lng: 80.7718
       },
     },
     {
-      name: "Location 5",
+      name: "IRAN",
       location: { 
-        lat: 41.4055,
-        lng: 2.1915
+        lat: 32.4279,
+        lng: 53.6880
+      },
+    },
+    {
+      name: "NEPAL",
+      location: { 
+        lat: 28.3949,
+        lng: 84.1240
+      },
+    },
+    {
+      name: "AFGHANISTAN",
+      location: { 
+        lat: 33.9391,
+        lng: 67.7100
+      },
+    },
+    {
+      name: "TAJIKISTAN",
+      location: { 
+        lat: 38.8610,
+        lng: 71.2761
       },
     }
   ];
@@ -80,12 +86,13 @@ export const MapContainer = () => {
 
         <GoogleMap
           mapContainerStyle={mapStyles}
-          zoom={13}
+          zoom={5}
           center={defaultCenter}>
          {
             locations.map(item => {
               return (
               <Marker key={item.name} position={item.location}/>
+          
               )
             })
          }

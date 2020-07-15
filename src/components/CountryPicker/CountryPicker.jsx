@@ -4,7 +4,6 @@ import { fetchCountries } from "../../api";
 
 const CountryPicker = ({ handleOnChange }) => {
   const [fetchedCountries, setFetchedCountries] = useState([]);
-
   useEffect(() => {
     const fetchCountryApi = async () => {
       setFetchedCountries(await fetchCountries());
@@ -37,16 +36,9 @@ const CountryPicker = ({ handleOnChange }) => {
               </option>
             ))}
           </NativeSelect>
-          
-          
         </FormControl>
-        </div>
-        <div>
-            {fetchedCountries.map((countryNames) => (<li>{countryNames}</li>) )}
-        
-            </div>        
+      </div>
     </div>
-
   );
 };
 

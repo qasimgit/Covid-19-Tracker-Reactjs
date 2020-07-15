@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Components //
-import { Cards, ChartsData, CountryPicker, Symtoms } from "./components";
+import { Cards, ChartsData, CountryPicker, Symtoms , MapContainer } from "./components";
 
 import "./App.css";
 import { fetchData, fetchCountrydata } from "./api";
@@ -41,6 +41,7 @@ const App = () => {
         <Symtoms />
 
         <ChartsData />
+        <MapContainer />
       </div>
     </div>
   );

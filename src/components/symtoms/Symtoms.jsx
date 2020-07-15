@@ -11,20 +11,20 @@ export const Symtoms = () => {
         <h1 className="symHeading">Symtoms</h1>
         <h1>
           <span>
-            <img src={fever} className="imgsym" />
+            <img src={fever} className="imgsym" alt='fever'/>
           </span>
           Fever
         </h1>
         <h1>
-          <img src={cough} className="imgsym" />
+          <img src={cough} className="imgsym" alt='cough' />
           Dry Cough
         </h1>
         <h1>
-          <img src={lungs} className="imgsym" />
+          <img src={lungs} className="imgsym" alt='lungs' />
           Shortness of Breath
         </h1>
         <h1>
-          <img src={sorethorat} className="imgsym" />
+          <img src={sorethorat} className="imgsym" alt='sore thraot' />
           Sore Throat
         </h1>
       </div>

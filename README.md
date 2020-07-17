@@ -14,3 +14,8 @@
   * ChartJS
   * Count up
   * Google Maps
+
+### Deployed through Surge
+### Automated deploy on PUSH through Github actions workflow
+Surge Url:   http://qasimcovid.surge.sh/
+

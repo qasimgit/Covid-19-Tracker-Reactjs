@@ -1,6 +1,6 @@
 # Covid 19 tracker Reactjs
 
-###Components
+### Components
 
 * CountryPicker
 * Cards
@@ -8,7 +8,7 @@
 * Maps
 * Symtoms
 
-###Dependencies Used in;
+### Dependencies Used in;
   * Axios
   * Material Ui
   * ChartJS
